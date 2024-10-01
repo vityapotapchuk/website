@@ -1,0 +1,190 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contacts-section {
+    margin: 0 auto;
+    text-align: center;
+    background-image: radial-gradient( circle at center in hsl shorter hue, #1e1e1e, black);
+    background-size: 100% 100%;
+}
+
+.container-contacts {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10vh 0;
+}
+.contacts {
+    width: 40%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border-radius: 15px;
+    backdrop-filter: blur(0.5);
+    background-color: rgba(146, 146, 146, 0.08);
+    border: 1px solid rgba(146, 146, 146, 0.28);
+}
+.form {
+    width: 40%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(0.5);
+    background-color: rgba(146, 146, 146, 0.08);
+    border: 1px solid rgba(146, 146, 146, 0.28);
+}
+.contacts-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    padding: 15px 0;
+    gap: 10px;
+}
+.h2-title {
+    font-size: 2rem;
+    margin: 6rem 3rem ;
+}
+
+.contacts-item p{
+    font-size: 18px;
+    margin-left: 3rem;
+}
+.input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #eeeeee55;
+    color: var(--textColor);
+}
+.input:focus {
+    outline: none;
+    background-color: #1e1e1e;
+    color: var(--textColor);
+}
+.input:hover {
+    color: #ffffff;
+}
+input:hover::placeholder {
+    color: #ffffff;
+}
+input::placeholder {
+    font-size: 16px;
+    color: #acacac;
+}
+.btn {
+    margin: 10px 0;
+    background-color: var(--secondaryTextColor);
+    padding: 10px 3px;
+    border: none;
+    color: var(--mainColor);
+    width: 100%;
+    border-radius: 12px;
+}
+.btn span {
+    font-size: 20px;
+    font-weight: 450;
+}
+.btn:hover {
+    background-color: #5c5c5c;
+}
+.fa-icon {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff74;
+}
+.container h1 {
+    font-size: 66px;
+    background-color: #1a1a1a;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.title-contacts {
+    font-size: 66px;
+    background-color: #1a1a1a;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 200px) {
+    .container-contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .contacts {
+        width: 90%;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        margin: 50px 0;
+    }
+    .form {
+        width: 90%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    .contacts-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding: 15px 15px;
+        gap: 10px;
+    }
+    .contacts-item p{
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .fa-icon {
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contacts h3 {
+        margin: 50px 0;
+        font-size: 2rem;
+    }
+    .form h3 {
+        margin: 50px 0;
+        font-size: 2rem;
+    }
+
+    .h2-title {
+        font-size: 1.5rem;
+        margin: 5rem 2rem 1rem 2rem;
+    }
+} 
+    
+
