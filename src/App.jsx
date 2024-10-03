@@ -11,8 +11,7 @@ import Services from './Components/Services/Services'
 
 function App() {
     return (
-        <div>
-
+        <>
             <Navbar />
             <Main />
             <Slider />
@@ -21,10 +20,7 @@ function App() {
             <Services />
             <Contacts />
             <Footer />
-
-
-
-        </div>
+        </>
     )
 }
 
