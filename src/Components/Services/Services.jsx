@@ -7,13 +7,13 @@ function Services() {
             <div className="content-services">
                 <div className="services-container">
                     <div className="full-cycle-container">
+                        <h3>FULL CYCLE</h3>
                         <ul>
                             <li>CONTENT MARKETING - MANAGING A BRAND/BLOGGER ON SOCIAL NETWORKS [INSTAGRAM/YOUTUBE/& SO
                                 ON]
                             </li>
                             <li>PROJECT COOPERATION</li>
                         </ul>
-                        <h3>FULL CYCLE</h3>
                     </div>
                     <div className="any-formats-container">
                         <h3>ANY FORMATS</h3>
