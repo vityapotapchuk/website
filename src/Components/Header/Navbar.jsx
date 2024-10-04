@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 function Navbar() {
 
   const [ isMobile, setMobile ] = useState(false);
-  
+
   return (
     <div className="navbar">
         <Link to="main" spy={true} smooth={false} offset={0}>
@@ -31,7 +31,7 @@ function Navbar() {
             {isMobile? <FaTimes/> : <FaBars />}
       </button>
       </div>
-   
+
   );
 }
 
