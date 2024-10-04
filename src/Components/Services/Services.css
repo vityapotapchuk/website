@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: radial-gradient( circle at center in hsl shorter hue, #1e1e1e, black);
+    background-image: radial-gradient(#1e1e1e, black);
 }
 .title-services {
     font-size: 66px;
