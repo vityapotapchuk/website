@@ -6,7 +6,7 @@ import useForm from "../../hooks/useForm.js";
 
 function Navbar() {
   const {isMobile, clickState, setMobile} = useForm()
-  
+
   return (
     <div className="navbar">
         <Link to="main" spy={true} smooth={false} offset={0}>
@@ -30,7 +30,7 @@ function Navbar() {
             {isMobile? <FaTimes/> : <FaBars />}
       </button>
       </div>
-   
+
   );
 }
 
