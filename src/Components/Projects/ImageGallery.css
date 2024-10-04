@@ -4,49 +4,63 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: radial-gradient( circle at center in hsl shorter hue, #1e1e1e, black);
+    background-image: radial-gradient(#1e1e1e, black);
 }
 .gallery-container {
-  overflow-y: hidden; 
   scrollbar-width: none;
-  width: 90%;
-  margin: 10rem auto;
+  width: 95%;
+  margin: 5rem auto;
   display: flex;
-  gap: 50px;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-around;
+  align-content: flex-start;
+}
 
-
+.gallery-card a{
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+/*  border: 1px solid white;*/
+  align-items: center;
 }
 .gallery-card {
-  flex: 0 0 auto;
-  width: 50%;
-  overflow: hidden;
-  border-radius: 15px;
-  position: relative;
-  display: flex;
-  flex-direction: row;
+  width: 30%;
 }
+.gallery-card a:link,
+.gallery-card a:visited {
+  color: #eee;
+  text-decoration: none;
+}
+
 .gallery-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 15px 15px 0 0;
+/*  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);*/
 }
+
 .text-container {
   width: 100%;
-  height: 100%;
-  top: -600px;
-  right: 0;
-  position: absolute;
-  background: #00000083;
-  backdrop-filter: blur(2px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: 0.3s ease-in-out;
+  margin: 0 10px;
+  padding: 5px 0;
+  background-color: rgba(220, 220, 220, 0.1);
+  border-radius: 0 0 12px 12px;
+/*  border: 1px solid white;*/
 }
-.gallery-card:hover .text-container {
-  top: 0;
+.text-container p{
+  font-size: 13px;
 }
+.text-container h3{
+  font-size: 16px;
+}
+
 .title-projects {
     font-size: 66px;
     background-color: #1a1a1a;
@@ -58,17 +72,13 @@
 /*    margin-top: 150px;*/
 }
 
-@media only screen and (max-width: 500px) {
-    .gallery-container {
+@media only screen and (max-width: 700px) {
 
-    }
     .gallery-card {
-
-        width: 100%;
+        width: 90%;
         overflow: hidden;
-        /*border:1px solid #eee;*/
         position: relative;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 }

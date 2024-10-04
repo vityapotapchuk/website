@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: radial-gradient( circle at center in hsl shorter hue, #1e1e1e, black);
+    background-image: radial-gradient(#1e1e1e, black);
     /*border: 1px solid #eee;*/
 }
 
@@ -19,18 +19,18 @@
     width: 90%;
     padding: 30px;
     align-items: center;
-    margin: 25vh auto;
+    margin: 15vh auto;
     /*border: 1px solid #eee;*/
 }
 
 .description {
-    width: 70%;
+    width: 60%;
     border-radius: 15px;
     backdrop-filter: blur(0.5);
     background-color: rgba(146, 146, 146, 0.08);
     border: 1px solid rgba(146, 146, 146, 0.28);
     /* border: 1px solid #eee; */
-    padding: 35px 30px 25px 30px;
+    padding: 30px;
 }
 
 .description p {

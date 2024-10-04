@@ -9,11 +9,13 @@ const ImageGallery = () => {
         {images.map((image) => {
           return (
             <div key={image.id} className="gallery-card">
-              <img src={image.url} alt={image.title} />
-              <div className="text-container">
-                <h3 style={{ marginBottom: "10px" }}>{image.title}</h3>
-                <p>{image.description}</p>
-              </div>
+              <a href={image.videoURL} target="_blank">
+                <img src={image.url} alt={image.title} />
+                <div className="text-container">
+                  <h3>{image.title}</h3>
+                  <p>{image.description}</p>
+                </div>
+              </a>
             </div>
           );
         })}

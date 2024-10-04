@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: radial-gradient( circle at center in hsl shorter hue, #1e1e1e, black);
+    background-image: radial-gradient(#1e1e1e, black);
 }
 .title-services {
     font-size: 66px;
@@ -34,7 +34,7 @@
     width: 50%;
     /*border: 1px solid #eee;*/
     padding: 10px;
-    line-height: 3rem;
+    line-height: 2rem;
     font-size: 1.2rem;
     display: flex;
     align-items: center;
@@ -45,7 +45,7 @@
     width: 50%;
     /*border: 1px solid #eee;*/
     padding: 10px;
-    line-height: 3rem;
+    line-height: 2rem;
     font-size: 1.2rem;
     display: flex;
     align-items: center;
@@ -108,7 +108,7 @@
     scale: 1.03;
 }
 .item p {
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 15px 20px;
 }
 .item h3 {
@@ -135,7 +135,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 5rem 1rem;
+        padding: 2rem 1rem;
         align-items: center;
     }
 
@@ -145,7 +145,7 @@
         padding: 10px;
         line-height: 2.5rem;
         font-size: 1rem;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         gap: 10px;
     }
@@ -155,16 +155,16 @@
         padding: 10px;
         line-height: 2.5rem;
         font-size: 1rem;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
         gap: 10px;
     }
     .full-cycle-container h3 {
-        font-size: 3rem;
+        font-size: 2rem;
         margin: 2rem 0;
     }
     .any-formats-container h3 {
-        font-size: 3rem;
+        font-size: 2rem;
         margin: 2rem 0;
         justify-content: center;
         display: flex;
@@ -176,7 +176,6 @@
         width: 100%;
         padding: 10px;
         align-items: center;
-        margin: 10vh auto;
         /*border: 1px solid #eee;*/
     }
 
@@ -255,7 +254,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 1rem;
+        padding: 0;
         align-items: center;
     }
 
@@ -264,9 +263,18 @@
         padding: 10px;
         line-height: 2rem;
         flex-direction: column;
-
         justify-content: space-around;
         gap: 10px;
+    }
+    .full-cycle-container ul {
+        border-radius: 15px;
+        align-items: center;
+        width: 100%;
+    }
+    .any-formats-container ul {
+        border-radius: 15px;
+        align-items: center;
+        width: 100%;
     }
     .any-formats-container {
         width: 95%;
