@@ -12,7 +12,7 @@ function Navbar() {
         <Link to="main" spy={true} smooth={false} offset={0}>
             <img className="logo-img-nav" src={logo} alt="logo" />
         </Link>
-        <nav className={"nav-links"} onClick={() => setMobile("main")}>
+        <nav className={isMobile ? "nav-links-mobile" : "nav-links"} onClick={() => setMobile("main")}>
           <Link style={{color: clickState === "projects" && "orange" }} to="projects" spy={true} smooth={false} offset={140} onClick={() => setMobile("projects")}>
             <p>Projects</p>
           </Link>
