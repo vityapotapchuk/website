@@ -7,13 +7,13 @@ import About from './Components/About/About'
 import Contacts from './Components/Contacts/Contacts'
 import Footer from './Components/Footer/Footer'
 import Services from './Components/Services/Services'
+import useForm from "./hooks/useForm.js";
 
 
 function App() {
     return (
-        <div>
-
-            <Navbar />
+        <>
+            <Navbar/>
             <Main />
             <Slider />
             <ImageGallery />
@@ -21,10 +21,7 @@ function App() {
             <Services />
             <Contacts />
             <Footer />
-
-
-
-        </div>
+        </>
     )
 }
 
